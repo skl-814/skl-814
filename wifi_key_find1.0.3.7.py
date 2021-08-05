@@ -42,11 +42,11 @@ while True:
     else:
         print("No this user!")#sign in end
     while keyyes==True:
-        print("Inpt some commands to begin.(Input 'chelp' to see help)")
+        print("Input some commands to begin.(Input 'chelp' to see help)")
 
         #Input command
         command1=input('')
-        if command1=="cheip":
+        if command1=="chelp":
             chelp()
         elif command1=="look for":
             wifiname=input("Name of wi-fi:\n")
@@ -61,7 +61,7 @@ while True:
             name_willdel=input("input the name of need-delete wi-fi's name")
             del wifi_key1[name_willdel]
             print("command was finished.You delete the wi-fi named",name_willdel)
-        elif command=="add":
+        elif command1=="add":
             nnaame=input("input the name of wi-fi:\n")
             kkeeyy=input("input the key of wi-fi:\n")
             wifi_key1[nnaame]=kkeeyy
